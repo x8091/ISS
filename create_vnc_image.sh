@@ -6,14 +6,6 @@ cp data/sources.list /etc/apt/sources.list
 apt-get update
 apt-get -y --allow-unauthenticated install software-properties-common
 
-#edit hostname
-#echo "127.0.0.1       HERE" > /etc/hosts
-#echo "HERE" > /etc/hostname
-
-#apt
-#apt install -y --allow-unauthenticated aptitude
-#aptitude install -y debian-keyring debian-archive-keyring
-
 #
 #cp data/sources.list /etc/apt/sources.list
 add-apt-repository -y ppa:mozillateam/ppa
@@ -107,5 +99,5 @@ firefox &
 sleep 2
 exit
 '
-echo "You can reboot server now."
+echo "You can reboot server now. Good-bye!"
 
