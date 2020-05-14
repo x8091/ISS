@@ -38,7 +38,7 @@ cp data/monitrc /etc/monit/monitrc
 sed -i '/^swap/d' /etc/fstab
 touch /var/swap.img
 chmod 600 /var/swap.img
-dd if=/dev/zero of=/var/swap.img bs=1024k count=1000
+dd if=/dev/zero of=/var/swap.img bs=512k count=1000
 mkswap /var/swap.img
 swapon /var/swap.img
 echo "/var/swap.img    none    swap    sw    0    0" >> /etc/fstab
